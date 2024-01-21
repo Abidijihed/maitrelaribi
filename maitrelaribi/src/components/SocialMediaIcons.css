@@ -1,0 +1,24 @@
+/* SocialMediaIcons.css */
+
+.social-icons {
+    position: fixed;
+    top: 50%; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin-bottom: 10px; /* Adjust the spacing between icons */
+    color: #333; /* Set your desired icon color */
+    font-size: 24px; /* Set your desired icon size */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #3498db; /* Set your desired hover color */
+  }
+  
