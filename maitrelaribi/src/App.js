@@ -13,6 +13,7 @@ import DroitPénal from './services/DroitPénal.js'
 // import Presentation from './components/Presentation.js'
 // import SocialMediaIcons from './components/SocialMediaIcons.js';
 import Footer from './components/Footer.js';
+import Contact from './components/Contact.js';
 // import Maps from './components/Maps.js'
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
          <Route path="/DroitDesAssurances" element={<DroitDesAssurances/>} />
         <Route path="/DroitImmobilier" element={<DroitImmobilier/>} /> 
         <Route path="/DroitPénal" element={<DroitPénal/>} />
+        <Route path="/contact" element={<Contact/>} />
     </Routes>
     {/* <Maps /> */}
     <Footer />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,10 +11,10 @@ const Navbar = () => {
         <FaSearch style={searchIconStyle} />
       </div>
       <ul style={navListStyle}>
-        <li style={navItemStyle}>Home</li>
-        <li style={navItemStyle}>About</li>
-        <li style={navItemStyle}>Services</li>
-        <li style={navItemStyle}>Contact</li>
+        <li style={navItemStyle}><Link to="/"><span style={{color:"white"}}>Home</span></Link></li>
+        <li style={navItemStyle}><Link to="/about"><span style={{color:"white"}}>About</span></Link></li>
+        <li style={navItemStyle}><Link to="/services"><span style={{color:"white"}}>Services</span></Link></li>
+        <li style={navItemStyle}><Link to="/contact"><span style={{color:"white"}}>Contact</span></Link></li>
       </ul>
     </nav>
   );
