@@ -1,19 +1,22 @@
 import React from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav style={navbarStyle}>
       <div style={logoStyle}>Logo</div>
-      <div style={searchContainerStyle}>
+      <p><FaPhone /> Phone: +216 71 562 938</p>
+      <p><FaEnvelope /> Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      {/* <div style={searchContainerStyle}>
         <input style={searchInputStyle} type="text" placeholder="Search..." />
         <FaSearch style={searchIconStyle} />
-      </div>
+      </div> */}
       <ul style={navListStyle}>
-        <li style={navItemStyle}><Link to="/"><span style={{color:"white"}}>Home</span></Link></li>
+      
+        <li style={navItemStyle}><Link to="/"><span style={{color:"white"}}>Accueil</span></Link></li>
         <li style={navItemStyle}><Link to="/about"><span style={{color:"white"}}>About</span></Link></li>
-        <li style={navItemStyle}><Link to="/services"><span style={{color:"white"}}>Services</span></Link></li>
+        <li style={navItemStyle}><Link to="/services"><span style={{color:"white"}}>Service</span></Link></li>
         <li style={navItemStyle}><Link to="/contact"><span style={{color:"white"}}>Contact</span></Link></li>
       </ul>
     </nav>

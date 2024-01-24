@@ -3,7 +3,9 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const bodyParser = require('body-parser');
-require("dotenv").config();
+const {mailrouter}=require('./routers/mailRouter')
+
+// require("dotenv").config();
 app.use(
   cors({
     origin: "*",
@@ -16,5 +18,5 @@ app.use(
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cookieParser());
-
+app.use('/',mailrouter)
 module.exports = app;

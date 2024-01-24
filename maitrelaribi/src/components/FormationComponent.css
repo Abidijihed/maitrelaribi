@@ -1,0 +1,27 @@
+.formation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light green color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formation-container h2 {
+    color: #4caf50; /* Green color */
+  }
+  
+  .formation-container p {
+    margin-bottom: 15px;
+  }
+  
+  .formation-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .formation-container li {
+    margin-bottom: 5px;
+    color: #333; /* Set your desired text color */
+  }
+  

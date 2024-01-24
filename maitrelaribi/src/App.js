@@ -10,7 +10,7 @@ import DroitImmobilier from './services/DroitImmobilier.js'
 import DroitPénal from './services/DroitPénal.js'
 // import PersonalInjuryLawPage from './PersonalInjuryLawPage';
 // import Flags from './services/Services.js'
-// import Presentation from './components/Presentation.js'
+import Presentation from './components/Presentation.js'
 // import SocialMediaIcons from './components/SocialMediaIcons.js';
 import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
@@ -31,6 +31,7 @@ const App = () => {
         <Route path="/DroitImmobilier" element={<DroitImmobilier/>} /> 
         <Route path="/DroitPénal" element={<DroitPénal/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<Presentation/>} />
     </Routes>
     {/* <Maps /> */}
     <Footer />

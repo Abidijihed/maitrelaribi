@@ -106,4 +106,16 @@
   .bannerItem .descr {
     font-size: 0.9rem;
   }
-  
+  /* Add this style to your existing CSS or Flags.css */
+.read-more-button {
+  background-color: rgb(255, 215, 0);
+  color: #000; /* Set text color as needed */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+  background-color: #ffcc00; /* Set your desired hover color */
+}

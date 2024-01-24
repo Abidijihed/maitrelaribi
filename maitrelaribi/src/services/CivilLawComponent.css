@@ -1,0 +1,22 @@
+.civil-law-container {
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .civil-law-container h2 {
+    color: #1877f2; /* Facebook color */
+  }
+  
+  .civil-law-container p {
+    margin-bottom: 15px;
+  }
+  .business-law-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+    margin-bottom: 20px; /* Optional: Add spacing between image and text */
+  }

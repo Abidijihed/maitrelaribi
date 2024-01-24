@@ -1,24 +1,42 @@
-/* SocialMediaIcons.css */
-
 .social-icons {
-    position: fixed;
-    top: 50%; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .social-icons a {
-    margin-bottom: 10px; /* Adjust the spacing between icons */
-    color: #333; /* Set your desired icon color */
-    font-size: 24px; /* Set your desired icon size */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .social-icons a:hover {
-    color: #3498db; /* Set your desired hover color */
-  }
-  
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Ensure the icons stay above the carousel */
+}
+
+.social-icons a {
+  margin-bottom: 15px;
+  font-size: 36px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a i.fab.fa-linkedin {
+  color: #0077b5;
+}
+
+.social-icons a i.fab.fa-facebook {
+  color: #1877f2;
+}
+
+.social-icons a i.fab.fa-twitter {
+  color: #1da1f2;
+}
+
+.social-icons a i.fab.fa-instagram {
+  color: #bc2a8d;
+}
+
+.social-icons a:hover {
+  color: #e74c3c;
+}
+
+/* Add the following style to make the carousel content start below the fixed icons */
+.slider-container {
+  margin-top: 150px; /* Adjust this value based on the height of your social media icons */
+}

@@ -1,0 +1,26 @@
+.honoraires-politique-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Set your desired background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.honoraires-politique-container h2 {
+  color: #ff5722; /* Deep orange color */
+}
+
+.honoraires-politique-container p {
+  margin-bottom: 15px;
+}
+
+.contact-link {
+  color: #2196f3; /* Blue color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: #0d47a1; /* Darker blue on hover */
+}
