@@ -19,7 +19,7 @@ const PhotoSection = () => {
   <h2 className="presentation-title">Présentation</h2>
   <p className="presentation-text">
     Le Cabinet d’Avocat LAARIBI LAW FIRM se distingue en tant que leader
-    dans le domaine du <a href="#">droit des affaires en Tunisie</a>. Avec de nombreuses
+    dans le domaine du <a href="/">droit des affaires en Tunisie</a>. Avec de nombreuses
     années d’expérience à notre actif, notre cabinet s’est spécialisé
     dans divers domaines, y compris les droits des Tunisiens à
     l’étranger, les expatriés en Tunisie et les investissements dans le

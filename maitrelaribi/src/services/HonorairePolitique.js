@@ -4,7 +4,7 @@ import './HonorairesPolitiqueComponent.css';
 
 const HonorairesPolitiqueComponent = () => {
   return (
-    <div className="honoraires-politique-container">
+    <div className="honoraires-politique-container" style={{marginTop:"25px"}}>
       <h2>Politique d’honoraires</h2>
       <p>
         A l'heure (avec fiche de temps passé)

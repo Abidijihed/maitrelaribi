@@ -8,7 +8,7 @@ const BannerComponent = () => {
   const navigate=useNavigate()
   return (
     <div>
-      <h1>services / Activités - Expertise pluridisciplinaire</h1>
+      <h1>Services / Activités - Expertise pluridisciplinaire</h1>
       <ul id="bannerList">
       {/* <li className="bannerItem" style={{ "--accent-color": "#001f3f" }}>
           <div className="title">Droit civil - Recouvrement de créances</div>
