@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
  host: 'smtp.gmail.com',
  secure: false,
   auth: {
-    user: "secureproject02@gmail.com",
-    pass: 'qlzjymyzfdmydemf'
+    user: "maitrelaaribi@gmail.com",
+    pass: 'wnfpyltuypalpgnb'
   },
   tls: {
     rejectUnauthorized: false,
@@ -58,7 +58,7 @@ const nodmail = async(req, res, next) => {
 
   var mail = {
     from: req.body.email,
-    to: "secureproject02@gmail.com",
+    to: "maitrelaaribi@gmail.com",
     Subject: subject,
     text: message,
     html:html

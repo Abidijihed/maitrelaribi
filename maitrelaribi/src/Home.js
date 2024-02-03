@@ -10,6 +10,7 @@ import About from './components/About.js'
 import Formation from './components/Formation.js'
 import ConsultationComponent from './services/Consultation.js';
 import HonorairesPolitiqueComponent from './services/HonorairePolitique.js';
+
 const Home = () => {
   const carouselImages = [
     'https://www.griffith.ie/sites/default/files/styles/blog_header/public/storage/law%20blog%20header.jpg.webp?itok=baj9oljR',
@@ -17,6 +18,7 @@ const Home = () => {
     'https://esplinweight.com/wp-content/uploads/2020/01/89770471_m.jpg',
     'https://images.shiksha.com/mediadata/images/articles/1652105078phpaUJONK.jpeg',
   ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -24,31 +26,43 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Adjust the speed of the carousel
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative', maxWidth: '100%', overflow: 'hidden' }}>
       <SocialMediaIcons />
       <Slider {...settings}>
         {carouselImages.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`carousel-image-${index}`} style={{ width: '100%', height: '500px', objectFit: 'cover' }} />
+            <img
+              src={image}
+              alt={`carousel-image-${index}`}
+              style={{ width: '100%', height: '500px', objectFit: 'cover' }}
+            />
           </div>
         ))}
       </Slider>
       <About />
       <Flags />
       <Formation />
-      <ConsultationComponent/>
+      <ConsultationComponent />
       <HonorairesPolitiqueComponent />
-      <div style={{display:"flex",justifyContent:"center"}}>
-      <h2>Trouver Nous</h2>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <h2>Trouver Nous</h2>
       </div>
-     <div style={{display:'flex',justifyContent:'center',margin:'25px'}}>
-     <Maps />
-     </div>
-     
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '25px' }}>
+        <Maps />
+      </div>
     </div>
   );
 };

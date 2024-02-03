@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS maitrelaribi_db;
+CREATE DATABASE IF NOT EXISTS maitrelaribi_db;
+USE maitrelaribi_db;
+
+-- Create User table
+CREATE TABLE User (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  role VARCHAR(50) NOT NULL
+);
+
+-- Create Post table
+CREATE TABLE Post (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  imageUrl VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  text TEXT NOT NULL
+);

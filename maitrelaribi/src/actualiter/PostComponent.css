@@ -1,0 +1,38 @@
+.post-container {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-content {
+    margin-top: 10px;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+
+  /* Add more styling based on your design preferences */
+  

@@ -45,6 +45,10 @@ const Contact = () => {
       tel:tel,
       email:email,
       message:message
+    }).then((res)=>{
+      if(res.status==='success'){
+        
+      }
     })
   }
 
