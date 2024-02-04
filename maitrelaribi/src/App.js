@@ -19,6 +19,7 @@ import Actualiter from './actualiter/Actualiter.js'
 import { useSelector,useDispatch } from "react-redux";
 
 import { get_product } from './redux/action/actionPost.js';
+import Login from './components/Login.js';
 const App = () => {
   const dispatch=useDispatch()
   useEffect(()=>{
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/about" element={<Presentation/>} />
         <Route path="/services" element={<Flags/>} />
         <Route path="/Actualités" element={<Actualiter data={data}/>} />
+        <Route path="/login/admin" element={<Login/>} />
     </Routes>
     {/* <Maps /> */}
     <Footer />

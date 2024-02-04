@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {GET_PRODUCT} from '../actiontype/actiontype'
+import {GET_PRODUCT, GET_USER} from '../actiontype/actiontype'
 
 import Swal from 'sweetalert2'
 export const get_product = () => async (dispatch) => {
@@ -71,4 +71,20 @@ export const delete_product = (id) => async (dispatch) => {
      console.log(error)
 
     }
+}
+export const get_user = () => async (dispatch) => {
+  try {
+     await axios.get('http://localhost:5800/api/getuser').then((res)=>{
+      dispatch({ type: GET_USER, payload: res.data[0] })
+
+     })
+
+  } catch (error) {
+      Swal.fire({
+          icon: "error",
+          title: "Oops..."
+        });
+      }
+
+  
 }
