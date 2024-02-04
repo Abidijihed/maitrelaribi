@@ -5,7 +5,7 @@ import logo from "./logo.png"
 const Navbar = () => {
   return (
     <nav style={navbarStyle}>
-      <div style={logoStyle}><img src={logo} style={{width:"80px",height:"60px"}} /></div>
+      <div style={logoStyle}><a href='/'><img src={logo} style={{width:"80px",height:"60px"}} /></a></div>
       <p><FaPhone /> Phone: +216 71 562 938</p>
       <p><FaEnvelope /> Email: maitrelaaribi@gmail.com</p>
       {/* <div style={searchContainerStyle}>
