@@ -67,4 +67,6 @@
   .footer-copyright p {
     margin: 0;
   }
-  
+  p.pfouter{
+    margin: 10px !important;
+  }

@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SocialMediaIcons from './components/SocialMediaIcons.js';
-import Presentation from './components/Presentation.js';
 import Flags from './services/Services.js';
 import Maps from './components/Maps.js';
 import About from './components/About.js'
@@ -11,7 +10,7 @@ import Formation from './components/Formation.js'
 import ConsultationComponent from './services/Consultation.js';
 import HonorairesPolitiqueComponent from './services/HonorairePolitique.js';
 
-const Home = () => {
+const Home = ({selectedLanguage}) => {
   const carouselImages = [
     'https://www.griffith.ie/sites/default/files/styles/blog_header/public/storage/law%20blog%20header.jpg.webp?itok=baj9oljR',
     'https://www.sharda.ac.in/blog/attachments/blog_images/4-Main-Types-of-Law-Which-One-Is-the-Best-For-You-1170x614-min.jpg',
@@ -42,28 +41,34 @@ const Home = () => {
     <div style={{ position: 'relative', maxWidth: '100%', overflow: 'hidden' }}>
       <SocialMediaIcons />
       <Slider {...settings}>
-        {carouselImages.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt={`carousel-image-${index}`}
-              style={{ width: '100%', height: '500px', objectFit: 'cover' }}
-            />
-          </div>
-        ))}
+      {carouselImages.map((image, index) => (
+  <div key={index}>
+    <img
+      src={image}
+      alt={`Law-related  ${index + 1}`}  // Provide a more descriptive alt text
+      style={{ width: '100%', height: '500px', objectFit: 'cover' }}
+    />
+  </div>
+))}
       </Slider>
-      <About />
-      <Flags />
-      <Formation />
-      <ConsultationComponent />
-      <HonorairesPolitiqueComponent />
+      <About selectedLanguage={selectedLanguage}/>
+      <Flags selectedLanguage={selectedLanguage} />
+      <Formation selectedLanguage={selectedLanguage}/>
+      <ConsultationComponent selectedLanguage={selectedLanguage} />
+      <HonorairesPolitiqueComponent  selectedLanguage={selectedLanguage}/>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <h2>Trouver Nous</h2>
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'center', margin: '25px' }}>
-        <Maps />
-      </div>
-    </div>
+  <h2>
+    {selectedLanguage === 'ar'
+      ? 'العثور علينا'
+      : selectedLanguage === 'fr'
+      ? 'Trouvez-nous'
+      : 'Find Us'}
+  </h2>
+</div>
+<div style={{ display: 'flex', justifyContent: 'center', margin: '25px' }}>
+  <Maps />
+</div>
+</div>
   );
 };
 

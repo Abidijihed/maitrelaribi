@@ -4,7 +4,7 @@ import PostModal from './PostModal';
 import { useDispatch, useSelector } from 'react-redux';
 import { delete_product, get_user } from '../redux/action/actionPost';
 import PostModalUpdate from './PostModalUpdate'
-const PostComponent = ({ data }) => {
+const PostComponent = ({ data,selectedLanguage }) => {
   const user=useSelector((state)=>state.user)
   const [isModalUpdateOpen, setModalUpdateOpen] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
@@ -16,7 +16,6 @@ useEffect(()=>{
   setToken(token1)
 },[dispatch])
   const handleDelete = (id) => {
-    // Dispatch the delete_product action with the post id
     dispatch(delete_product(id));
   };
   return (
@@ -25,14 +24,8 @@ useEffect(()=>{
       {data.map((post, index) => (
         <div key={index} className="post-container">
           <div className="post-header">
-            {/* <img
-              className="user-avatar"
-              src="https://example.com/avatar.jpg" // Replace with the user's avatar URL
-              alt="User Avatar"
-            /> */}
             <div className="user-info">
             <h2>{post.title}</h2>
-              {/* <h3>{post.author}</h3> Replace with the actual user's name */}
               <p>Postuler Le: {post.created_at.slice(0,10)}</p>
             </div>
           </div>

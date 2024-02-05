@@ -3,7 +3,7 @@ import Maps from './Maps';
 import './Contact.css';
 import axios from 'axios';
 
-const Contact = () => {
+const Contact = ({ selectedLanguage }) => {
   const [subject, setSubject] = useState('');
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -38,27 +38,27 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform validation or submit the form data as needed
-    axios.post('http://localhost:5800/api/sendmail',{
-      subject:subject,
-      name:name,
-      lastName:lastName,
-      tel:tel,
-      email:email,
-      message:message
-    }).then((res)=>{
-      if(res.status==='success'){
-        
+    axios.post('http://localhost:5800/api/sendmail', {
+      subject: subject,
+      name: name,
+      lastName: lastName,
+      tel: tel,
+      email: email,
+      message: message
+    }).then((res) => {
+      if (res.status === 'success') {
+        // Handle success if needed
       }
-    })
-  }
+    });
+  };
 
   return (
     <div className="contact-container">
       <div className="contact-form">
-        <h2>Contact Us</h2>
+        <h2>{selectedLanguage === 'ar' ? 'اتصل بنا' : 'Contact Us'}</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="subject">Sujet</label>
+            <label htmlFor="subject">{selectedLanguage === 'ar' ? 'الموضوع' : 'Subject'}</label>
             <input
               type="text"
               id="subject"
@@ -69,7 +69,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="name">Nom</label>
+            <label htmlFor="name">{selectedLanguage === 'ar' ? 'الاسم' : 'Name'}</label>
             <input
               type="text"
               id="name"
@@ -80,7 +80,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="lastName">Prénom</label>
+            <label htmlFor="lastName">{selectedLanguage === 'ar' ? 'اللقب' : 'Last Name'}</label>
             <input
               type="text"
               id="lastName"
@@ -91,7 +91,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="tel">Telephone</label>
+            <label htmlFor="tel">{selectedLanguage === 'ar' ? 'الهاتف' : 'Telephone'}</label>
             <input
               type="tel"
               id="tel"
@@ -102,7 +102,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">{selectedLanguage === 'ar' ? 'البريد الإلكتروني' : 'Email'}</label>
             <input
               type="email"
               id="email"
@@ -113,7 +113,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{selectedLanguage === 'ar' ? 'الرسالة' : 'Message'}</label>
             <textarea
               id="message"
               name="message"
@@ -123,20 +123,12 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">Envoyer</button>
+          <button type="submit">{selectedLanguage === 'ar' ? 'إرسال' : 'Send'}</button>
         </form>
       </div>
 
       {/* You can embed your Google Maps iframe code here */}
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.3386346573654!2d10.165726780597065!3d36.801525055870975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd338b8d6f60fd%3A0x6ab7edee0c5e0092!2sminist%C3%A8re%20de%20la%20justice%2C%20Bd%20Bab%20Benet%2C%20Tunis!5e0!3m2!1sfr!2stn!4v1705677295319!5m2!1sfr!2stn"
-        width="890"
-        height="600"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <Maps />
     </div>
   );
 };

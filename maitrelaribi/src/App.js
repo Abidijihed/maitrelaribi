@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Navbar';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './Home.js';
 import DroitCivil from './services/DroitCivil.js';
@@ -8,13 +8,10 @@ import DroitDesAffaires from './services/DroitDesAffaires.js';
 import DroitDesAssurances from './services/DroitDesAssurances.js'
 import DroitImmobilier from './services/DroitImmobilier.js'
 import DroitPénal from './services/DroitPénal.js'
-// import PersonalInjuryLawPage from './PersonalInjuryLawPage';
 import Flags from './services/Services.js'
 import Presentation from './components/Presentation.js'
-// import SocialMediaIcons from './components/SocialMediaIcons.js';
 import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
-// import Maps from './components/Maps.js'
 import Actualiter from './actualiter/Actualiter.js'
 import { useSelector,useDispatch } from "react-redux";
 
@@ -26,28 +23,29 @@ const App = () => {
     dispatch(get_product())
   },[dispatch])
   const data=useSelector((state)=>state.data)
+  const [selectedLanguage, setSelectedLanguage] = useState('fr'); // Default language: French
 
+  const handleLanguageChange = (language) => {
+    // Implement language change logic here
+    setSelectedLanguage(language);
+  };
   return (
     
     <BrowserRouter>
-      <Navbar />
-      {/* <SocialMediaIcons />
-      <Presentation />
-      <Flags /> */}
+      <Navbar handleLanguageChange={handleLanguageChange} selectedLanguage={selectedLanguage}/>
     <Routes>
-        <Route path="/"  element={<Home />} />
-        <Route path="/DroitCivil" element={<DroitCivil/>} />
-        <Route path="/DroitDesAffaires" element={<DroitDesAffaires/>} />
-         <Route path="/DroitDesAssurances" element={<DroitDesAssurances/>} />
-        <Route path="/DroitImmobilier" element={<DroitImmobilier/>} /> 
-        <Route path="/DroitPénal" element={<DroitPénal/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/about" element={<Presentation/>} />
-        <Route path="/services" element={<Flags/>} />
-        <Route path="/Actualités" element={<Actualiter data={data}/>} />
+        <Route path="/"  element={<Home selectedLanguage={selectedLanguage}/>} />
+        <Route path="/DroitCivil" element={<DroitCivil selectedLanguage={selectedLanguage}/>} />
+        <Route path="/DroitDesAffaires" element={<DroitDesAffaires selectedLanguage={selectedLanguage}/>} />
+         <Route path="/DroitDesAssurances" element={<DroitDesAssurances selectedLanguage={selectedLanguage}/>} />
+        <Route path="/DroitImmobilier" element={<DroitImmobilier selectedLanguage={selectedLanguage}/>} /> 
+        <Route path="/DroitPénal" element={<DroitPénal selectedLanguage={selectedLanguage}/>} />
+        <Route path="/contact" element={<Contact selectedLanguage={selectedLanguage}/>} />
+        <Route path="/about" element={<Presentation selectedLanguage={selectedLanguage}/>} />
+        <Route path="/services" element={<Flags selectedLanguage={selectedLanguage}/>} />
+        <Route path="/Actualités" element={<Actualiter data={data} selectedLanguage={selectedLanguage}/>} />
         <Route path="/login/admin" element={<Login/>} />
     </Routes>
-    {/* <Maps /> */}
     <Footer />
     </BrowserRouter>
   );
