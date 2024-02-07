@@ -38,7 +38,7 @@ const Contact = ({ selectedLanguage }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform validation or submit the form data as needed
-    axios.post('http://localhost:5800/api/sendmail', {
+    axios.post('http://134.209.228.166/api/sendmail', {
       subject: subject,
       name: name,
       lastName: lastName,

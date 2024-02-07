@@ -4,7 +4,7 @@ import {GET_PRODUCT, GET_USER} from '../actiontype/actiontype'
 import Swal from 'sweetalert2'
 export const get_product = () => async (dispatch) => {
     try {
-       await axios.get('http://localhost:5800/api/GEtPost').then((res)=>{
+       await axios.get('http://134.209.228.166/api/GEtPost').then((res)=>{
         dispatch({ type: GET_PRODUCT, payload: res.data })
 
        })
@@ -20,7 +20,7 @@ export const get_product = () => async (dispatch) => {
 }
 export const add_product = (data) => async (dispatch) => {
     try {
-        await axios.post('http://localhost:5800/api/AddPoste',data)
+        await axios.post('http://134.209.228.166/api/AddPoste',data)
         .then((res)=>{
             if(res.data==="poste added"){
               Swal.fire({
@@ -43,7 +43,7 @@ export const add_product = (data) => async (dispatch) => {
 }
 export const update_product = (id,data) => async (dispatch) => {
     try {
-       const res= await axios.put(`http://localhost:5800/api/Update/${id}`,data)
+       const res= await axios.put(`http://134.209.228.166/api/Update/${id}`,data)
         if(res.data==="Post updated successfully"){
             Swal.fire({
               position: 'center',
@@ -64,7 +64,7 @@ export const update_product = (id,data) => async (dispatch) => {
 
 export const delete_product = (id) => async (dispatch) => {
     try {
-        await axios.delete(`http://localhost:5800/api/DeletePost/${id}`)
+        await axios.delete(`http://134.209.228.166/api/DeletePost/${id}`)
         dispatch(get_product())
 
     } catch (error) {
@@ -74,7 +74,7 @@ export const delete_product = (id) => async (dispatch) => {
 }
 export const get_user = () => async (dispatch) => {
   try {
-     await axios.get('http://localhost:5800/api/getuser').then((res)=>{
+     await axios.get('http://134.209.228.166/api/getuser').then((res)=>{
       dispatch({ type: GET_USER, payload: res.data[0] })
 
      })
