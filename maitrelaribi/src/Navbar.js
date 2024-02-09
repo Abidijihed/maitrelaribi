@@ -42,7 +42,7 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight:
-            window.location.href === "http://localhost:3000/"
+            window.location.href === "http://134.209.228.166/"
               ? "100vh"
               : "30vh",
         }}
