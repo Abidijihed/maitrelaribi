@@ -14,7 +14,8 @@ import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
 import Actualiter from './actualiter/Actualiter.js'
 import { useSelector,useDispatch } from "react-redux";
-
+import HonorairesPolitiqueComponent from './services/HonorairePolitique.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { get_product } from './redux/action/actionPost.js';
 import Login from './components/Login.js';
 const App = () => {
@@ -45,6 +46,9 @@ const App = () => {
         <Route path="/services" element={<Flags selectedLanguage={selectedLanguage}/>} />
         <Route path="/Actualités" element={<Actualiter data={data} selectedLanguage={selectedLanguage}/>} />
         <Route path="/login/admin" element={<Login/>} />
+        <Route path="/honoraire" element={<HonorairesPolitiqueComponent selectedLanguage={selectedLanguage}/>} />
+
+
     </Routes>
     <Footer />
     </BrowserRouter>

@@ -24,3 +24,12 @@
 .contact-link:hover {
   color: #0d47a1; /* Darker blue on hover */
 }
+.btn {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #e6cba1;
+  color: #fff;
+  font-size: .8em;
+  box-sizing: border-box;
+}

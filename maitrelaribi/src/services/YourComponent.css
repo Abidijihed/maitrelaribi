@@ -1,0 +1,38 @@
+.practice-item {
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-size: cover;
+    color: black;
+  
+  }
+  .test{
+    background-color: white;
+    padding: 20px;
+    /* width: 400px;
+    height: 400px; */
+  }
+  .practice_inner {
+    text-align: center;
+  }
+  
+  .practice-icon {
+    margin-bottom: 10px;
+    color: #95d0bc;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7ba5a1;
+  }
+  .descr{
+    font-family: 'Open Sans', serif;
+    color: #666!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: 26px!important;
+  }

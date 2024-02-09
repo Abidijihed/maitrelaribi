@@ -9,7 +9,7 @@ import About from './components/About.js'
 import Formation from './components/Formation.js'
 import ConsultationComponent from './services/Consultation.js';
 import HonorairesPolitiqueComponent from './services/HonorairePolitique.js';
-
+import Test from './services/Test.js'
 const Home = ({selectedLanguage}) => {
   const carouselImages = [
     'https://www.griffith.ie/sites/default/files/styles/blog_header/public/storage/law%20blog%20header.jpg.webp?itok=baj9oljR',
@@ -40,22 +40,12 @@ const Home = ({selectedLanguage}) => {
   return (
     <div style={{ position: 'relative', maxWidth: '100%', overflow: 'hidden' }}>
       <SocialMediaIcons />
-      <Slider {...settings}>
-      {carouselImages.map((image, index) => (
-  <div key={index}>
-    <img
-      src={image}
-      alt={`Law-related  ${index + 1}`}  // Provide a more descriptive alt text
-      style={{ width: '100%', height: '500px', objectFit: 'cover' }}
-    />
-  </div>
-))}
-      </Slider>
       <About selectedLanguage={selectedLanguage}/>
       <Flags selectedLanguage={selectedLanguage} />
-      <Formation selectedLanguage={selectedLanguage}/>
+      {/* <Test /> */}
+      {/* <Formation selectedLanguage={selectedLanguage}/> */}
       <ConsultationComponent selectedLanguage={selectedLanguage} />
-      <HonorairesPolitiqueComponent  selectedLanguage={selectedLanguage}/>
+      {/* <HonorairesPolitiqueComponent  selectedLanguage={selectedLanguage}/> */}
       <div style={{ display: 'flex', justifyContent: 'center' }}>
   <h2>
     {selectedLanguage === 'ar'

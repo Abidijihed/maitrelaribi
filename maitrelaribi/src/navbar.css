@@ -1,0 +1,9 @@
+span.hovernav:hover {
+    background-color: #e6cba1 !important;
+    padding: 10px;
+    border-radius: 4%;
+}
+.navbar-link {
+    text-decoration: none;
+  }
+  
