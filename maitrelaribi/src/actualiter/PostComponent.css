@@ -10,6 +10,7 @@
   .post-header {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   .user-avatar {
@@ -31,6 +32,9 @@
   .post-image {
     max-width: 100%;
     margin-bottom: 10px;
+    margin-left: 50px;
+    width: 400px !important;
+    height: 300px !important;
   }
   
 

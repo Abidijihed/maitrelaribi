@@ -128,7 +128,7 @@ const Services = ({ selectedLanguage }) => {
        </div>
       </div>
     </div>
-    <div className="col-sm-3" onClick={() => navigate('/DroitPénal')}>
+    <div className="col-sm-3" onClick={() => navigate('/Formation')}>
       <div className="practice-item" style={{ backgroundImage: "url('https://www.sharda.ac.in/blog/attachments/blog_images/4-Main-Types-of-Law-Which-One-Is-the-Best-For-You-1170x614-min.jpg')" }}>
        <div className='test'>
        <div className="practice_inner">
@@ -142,8 +142,8 @@ const Services = ({ selectedLanguage }) => {
             {selectedLanguage === 'ar'
               ? 'تقدم LAARIBI LAW FIRM جلسات تدريب مخصصة ومتكاملة ومتكيفة مع احتياجات الشركات والجمعيات غير الحكومية وموظفيها. تغطي الدورات التدريبية المقدمة مجموعة واسعة من المواضيع...'
               : selectedLanguage === 'fr'
-              ? 'LAARIBI LAW FIRM propose des sessions de formation sur mesure et adaptées aux besoins opérationnels des entreprises, ONG et de leurs cadres. Les formations proposées couvrent un large éventail de sujets...'
-              : 'LAARIBI LAW FIRM offers customized, comprehensive, and tailored training sessions to meet the needs of companies, non-governmental organizations, and their employees. The training courses cover a wide range of topics...'}
+              ? 'LAARIBI LAW FIRM propose des sessions de formation sur mesure et adaptées aux besoins opérationnels des entreprises, ONG et de leurs cadres...'
+              : 'LAARIBI LAW FIRM offers customized, comprehensive, and tailored training sessions to meet the needs of companies, non-governmental organizations, and their employees...'}
           </div>
         </div>
        </div>

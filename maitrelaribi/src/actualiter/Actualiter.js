@@ -25,14 +25,14 @@ useEffect(()=>{
         <div key={index} className="post-container">
           <div className="post-header">
             <div className="user-info">
-            <h2>{post.title}</h2>
+            <h2 style={{color:"rgb(230, 203, 161)",fontWeight:800,fontFamily:"sans-serif"}}>{post.title}</h2>
               <p>Postuler Le: {post.created_at.slice(0,10)}</p>
             </div>
           </div>
           <div className="post-content">
             {post.imageUrl && <img className="post-image" src={post.imageUrl} alt="Post" />}
             
-            <p>{post.text}</p>
+            <p style={{fontFamily:"cursive",fontSize:"24px"}}>{post.text}</p>
           </div>
           {user.role === "admin" && token? <button onClick={() => handleDelete(post.id)}>Delete</button>:null}
           {user.role === "admin" && token?<button onClick={() => setModalUpdateOpen(true)}>Modifer Une Post</button>:null}

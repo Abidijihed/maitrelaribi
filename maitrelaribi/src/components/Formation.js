@@ -11,6 +11,8 @@ const FormationComponent = ({ selectedLanguage }) => {
           ? 'Formation'
           : 'Training'}
       </h2>
+      <img src='https://i.pinimg.com/564x/6c/85/18/6c851852490202c35b8602f5c02651ff.jpg' alt="Formation" className="business-law-image" />
+
       <p>
         {selectedLanguage === 'ar'
           ? 'تقدم LAARIBI LAW FIRM جلسات تدريب مخصصة ومتكاملة ومتكيفة مع احتياجات الشركات والجمعيات غير الحكومية وموظفيها. تغطي الدورات التدريبية المقدمة مجموعة واسعة من المواضيع:'

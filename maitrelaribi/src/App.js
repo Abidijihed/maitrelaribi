@@ -18,6 +18,7 @@ import HonorairesPolitiqueComponent from './services/HonorairePolitique.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { get_product } from './redux/action/actionPost.js';
 import Login from './components/Login.js';
+import FormationComponent from './components/Formation.js';
 const App = () => {
   const dispatch=useDispatch()
   useEffect(()=>{
@@ -41,6 +42,8 @@ const App = () => {
          <Route path="/DroitDesAssurances" element={<DroitDesAssurances selectedLanguage={selectedLanguage}/>} />
         <Route path="/DroitImmobilier" element={<DroitImmobilier selectedLanguage={selectedLanguage}/>} /> 
         <Route path="/DroitPénal" element={<DroitPénal selectedLanguage={selectedLanguage}/>} />
+        <Route path="/Formation" element={<FormationComponent selectedLanguage={selectedLanguage}/>} />
+
         <Route path="/contact" element={<Contact selectedLanguage={selectedLanguage}/>} />
         <Route path="/about" element={<Presentation selectedLanguage={selectedLanguage}/>} />
         <Route path="/services" element={<Flags selectedLanguage={selectedLanguage}/>} />

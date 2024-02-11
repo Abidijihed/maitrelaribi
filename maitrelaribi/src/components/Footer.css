@@ -70,3 +70,8 @@
   p.pfouter{
     margin: 10px !important;
   }
+  /* Footer.css */
+.arrow-before::before {
+  content: '\2192'; /* Unicode character for a right arrow */
+  margin-right: 5px;
+}

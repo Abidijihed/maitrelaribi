@@ -18,20 +18,20 @@ const Footer = () => {
             <div className='col-12'><h3 >Links</h3></div>
             <div className='col-6'>
             <ul>
-              <li><a href="https://avocat.org.tn/fr/">ONAT</a></li>
-              <li><a href="/">Resource 2</a></li>
-              <li><a href="http://www.tunisieindustrie.nat.tn/fr/home.asp">APII</a></li>
-              <li><a href="/">Resource 4</a></li>
+              <li><a className="arrow-before" href="https://avocat.org.tn/">Ordres National des Avocats de Tunisie</a></li>
+              <li><a className="arrow-before" href="https://www.iort.gov.tn/WD120AWP/WD120Awp.exe/CONNECT/SITEIORT">Journal Officiel de la République Tunisienne</a></li>
+              <li><a className="arrow-before" href="https://www.tunisieindustrie.nat.tn/fr/doc.asp?docid=753&mcat=22&mrub=178">Agence de Promotion de l'Industrie et de l'Innovation</a></li>
+              <li><a className="arrow-before" href="https://www.infosjuridiques.com.tn/">Infos Juridiques - La Revue du Droit</a></li>
             </ul>
             </div>
           
      
           <div className='col-6'>
             <ul>
-              <li><a href="https://www.apia.com.tn/">APIA</a></li>
-              <li><a href="https://www.uianet.org/fr">UIA</a></li>
-              <li><a href="https://www.aija.org/">AIJA</a></li>
-              <li><a href="https://www.wipo.int/portal/fr/">organisation mondial de la propriété intellectuelle</a></li>
+              <li><a className="arrow-before" href="https://www.cepex.nat.tn/content/accueil">Centre de Promotion des Exportations</a></li>
+              <li><a className="arrow-before" href="https://www.apia.com.tn/">Agence de Promotion des Investissements Agricoles</a></li>
+              <li><a className="arrow-before" href="https://www.aija.org/">Association Internationale des Jeunes Avocats (AIJA)</a></li>
+              <li><a className="arrow-before" href="https://www.wipo.int/portal/fr/">organisation mondial de la propriété intellectuelle</a></li>
             </ul>
             </div>
         
