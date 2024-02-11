@@ -6,6 +6,8 @@ import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="main-footer">
+      <div className='row'>
+      <div className='col-4'>
       <div className="footer-content">
         <div className="footer-contact" style={{margin:"10px"}}>
           <p className='pfouter'><FaPhone /> Phone: +216 71 562 938</p>
@@ -13,10 +15,14 @@ const Footer = () => {
           <p className='pfouter'><FaEnvelope /> Email: <a href="maitrelaaribi@gmail.com">maitrelaaribi@gmail.com</a></p>
           <p className='pfouter'><FaLinkedin /> LinkedIn: <a href="https://www.linkedin.com/in/llf-laaribi-law-firm-4ba749172/" target="_blank" rel="noopener noreferrer">laaribi-law-firm</a></p>
         </div>
+        </div>
+        </div>
+        <div className='col-8' id='phonefooter'>
         <div className="footer-resources">
-          <div className='row'>
+          <div className='row' >
             <div className='col-12'><h3 >Links</h3></div>
-            <div className='col-6'>
+            
+            <div className='col-6' >
             <ul>
               <li><a className="arrow-before" href="https://avocat.org.tn/">Ordres National des Avocats de Tunisie</a></li>
               <li><a className="arrow-before" href="https://www.iort.gov.tn/WD120AWP/WD120Awp.exe/CONNECT/SITEIORT">Journal Officiel de la République Tunisienne</a></li>
@@ -38,6 +44,9 @@ const Footer = () => {
         </div>
         </div>
       </div>
+      </div>
+
+     
       <div className="footer-copyright">
         <p>&copy; 2024 Maitre Laaribi. All rights reserved.<br></br>
         Powerd by Noja Team

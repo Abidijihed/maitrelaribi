@@ -41,10 +41,5 @@
     cursor: pointer;
   }
   
-  .map-container {
-    width: 50%;
-    height: 300px; /* Set your desired height */
-    background-color: #f0f0f0;
-    /* Add any additional styling for the map container */
-  }
+ 
   

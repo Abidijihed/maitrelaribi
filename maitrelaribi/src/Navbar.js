@@ -88,12 +88,13 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                 {/* Drawer Menu for Mobile */}
                 <button
                   style={{
-                    marginLeft: "10px",
+                   marginLeft: "10px",
                     backgroundColor: drawerOpen ? "#7ba5a1" : "#7ba59f",
                     color: "white",
                     border: "none",
                     padding: "10px",
                     cursor: "pointer",
+                    width:"100%"
                   }}
                   onClick={toggleDrawer}
                 >
@@ -112,92 +113,116 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                     }}
                   >
                     <ul
-                      style={{ listStyleType: "none", margin: 0, padding: 0 }}
+                      style={{ listStyleType: "none", margin: 0, padding: 10 }}
                     >
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            Accueil
-                          </span>
-                        </Link>
-                      </li>
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/contact">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            Contact
-                          </span>
-                        </Link>
-                      </li>
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/Actualités">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            Actualités
-                          </span>
-                        </Link>
-                      </li>
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/about">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            À propos
-                          </span>
-                        </Link>
-                      </li>
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/services">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            Services
-                          </span>
-                        </Link>
-                      </li>
-                      <li style={{ margin: "0 10px", marginBottom: "10px" }}>
-                        <Link to="/contact">
-                          <span
-                            className="hovernav"
-                            style={{
-                              color: "white",
-                              fontFamily: "Arial, sans-serif",
-                              transition: "color 0.3s",
-                            }}
-                          >
-                            Contact
-                          </span>
-                        </Link>
-                      </li>
+                     <li style={{ margin: "10px" }}>
+                    <Link to="/" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          fontWeight: 400,
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "الرئيسية"
+                          : selectedLanguage === "fr"
+                          ? "ACCUEIL"
+                          : "HOME"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/honoraire" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "سياسة الرسوم"
+                          : selectedLanguage === "fr"
+                          ? "POLITIQUE D'HONORAIRES"
+                          : "FEE POLICY"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/Actualités" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "أخبار"
+                          : selectedLanguage === "fr"
+                          ? "ACTUALITES"
+                          : "NEWS"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/about" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "من نحن؟"
+                          : selectedLanguage === "fr"
+                          ? "À PROPOS"
+                          : "ABOUT US"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/services" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "الخدمات"
+                          : selectedLanguage === "fr"
+                          ? "SERVICES"
+                          : "SERVICES"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/contact" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "اتصل"
+                          : selectedLanguage === "fr"
+                          ? "CONTACT"
+                          : "CONTACT"}
+                      </span>
+                    </Link>
+                  </li>
                     </ul>
                     <div style={{ marginLeft: "10px" }}>
                       <select

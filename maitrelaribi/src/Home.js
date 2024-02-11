@@ -55,7 +55,7 @@ const Home = ({selectedLanguage}) => {
       : 'Find Us'}
   </h2>
 </div>
-<div style={{ display: 'flex', justifyContent: 'center', margin: '25px' }}>
+<div style={{ display: 'flex', justifyContent: 'center'}}>
   <Maps />
 </div>
 </div>

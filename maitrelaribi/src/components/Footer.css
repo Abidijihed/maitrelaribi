@@ -75,3 +75,8 @@
   content: '\2192'; /* Unicode character for a right arrow */
   margin-right: 5px;
 }
+@media only screen and (max-width: 768px) {
+  #phonefooter{
+    margin-top: 155px
+  }
+}
