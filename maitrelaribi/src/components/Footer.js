@@ -9,6 +9,8 @@ const Footer = () => {
       <div className='row'>
       <div className='col-4'>
       <div className="footer-content">
+      <h4>LAARIBI LAW FIRM est un cabinet
+            d’affaires en Tunisie</h4>
         <div className="footer-contact" style={{margin:"10px"}}>
           <p className='pfouter'><FaPhone /> Phone: +216 71 562 938</p>
           <p className='pfouter'><FaPhone /> Phone: +216 98 351 049</p>

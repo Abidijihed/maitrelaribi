@@ -58,7 +58,7 @@ const Contact = ({ selectedLanguage }) => {
         <h2>{selectedLanguage === 'ar' ? 'اتصل بنا' : 'Contact Us'}</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="subject">{selectedLanguage === 'ar' ? 'الموضوع' : 'Subject'}</label>
+            <label htmlFor="subject">{selectedLanguage === 'fr'? "Sujet" : selectedLanguage === 'ar' ? 'الموضوع' : 'Subject'}</label>
             <input
               type="text"
               id="subject"
@@ -69,7 +69,7 @@ const Contact = ({ selectedLanguage }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="name">{selectedLanguage === 'ar' ? 'الاسم' : 'Name'}</label>
+            <label htmlFor="name">{selectedLanguage === 'fr'? "Nom" : selectedLanguage === 'ar' ? 'الاسم' : 'Name'}</label>
             <input
               type="text"
               id="name"
@@ -80,7 +80,7 @@ const Contact = ({ selectedLanguage }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="lastName">{selectedLanguage === 'ar' ? 'اللقب' : 'Last Name'}</label>
+            <label htmlFor="lastName">{selectedLanguage === 'fr'? "Prenom" : selectedLanguage === 'ar' ? 'اللقب' : 'Last Name'}</label>
             <input
               type="text"
               id="lastName"
@@ -91,7 +91,7 @@ const Contact = ({ selectedLanguage }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="tel">{selectedLanguage === 'ar' ? 'الهاتف' : 'Telephone'}</label>
+            <label htmlFor="tel">{selectedLanguage === 'fr'? "Tel" : selectedLanguage === 'ar' ? 'الهاتف' : 'Telephone'}</label>
             <input
               type="tel"
               id="tel"
@@ -102,7 +102,7 @@ const Contact = ({ selectedLanguage }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">{selectedLanguage === 'ar' ? 'البريد الإلكتروني' : 'Email'}</label>
+            <label htmlFor="email">{selectedLanguage === 'fr'? "Email" : selectedLanguage === 'ar' ? 'البريد الإلكتروني' : 'Email'}</label>
             <input
               type="email"
               id="email"
@@ -113,7 +113,7 @@ const Contact = ({ selectedLanguage }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">{selectedLanguage === 'ar' ? 'الرسالة' : 'Message'}</label>
+            <label htmlFor="message">{selectedLanguage === 'fr'? "Message" : selectedLanguage === 'ar' ? 'الرسالة' : 'Message'}</label>
             <textarea
               id="message"
               name="message"
@@ -123,7 +123,7 @@ const Contact = ({ selectedLanguage }) => {
               required
             ></textarea>
           </div>
-          <button type="submit">{selectedLanguage === 'ar' ? 'إرسال' : 'Send'}</button>
+          <button type="submit">{selectedLanguage === 'fr'? "Envoyer" : selectedLanguage === 'ar' ? 'إرسال' : 'Send'}</button>
         </form>
       </div>
 

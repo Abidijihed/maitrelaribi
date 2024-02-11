@@ -134,42 +134,6 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                     </Link>
                   </li>
                   <li style={{ margin: "10px" }}>
-                    <Link to="/honoraire" className="navbar-link">
-                      <span
-                        className="hovernav"
-                        style={{
-                          color: "white",
-                          fontFamily: "Arial, sans-serif",
-                          transition: "color 0.3s",
-                        }}
-                      >
-                        {selectedLanguage === "ar"
-                          ? "سياسة الرسوم"
-                          : selectedLanguage === "fr"
-                          ? "POLITIQUE D'HONORAIRES"
-                          : "FEE POLICY"}
-                      </span>
-                    </Link>
-                  </li>
-                  <li style={{ margin: "10px" }}>
-                    <Link to="/Actualités" className="navbar-link">
-                      <span
-                        className="hovernav"
-                        style={{
-                          color: "white",
-                          fontFamily: "Arial, sans-serif",
-                          transition: "color 0.3s",
-                        }}
-                      >
-                        {selectedLanguage === "ar"
-                          ? "أخبار"
-                          : selectedLanguage === "fr"
-                          ? "ACTUALITES"
-                          : "NEWS"}
-                      </span>
-                    </Link>
-                  </li>
-                  <li style={{ margin: "10px" }}>
                     <Link to="/about" className="navbar-link">
                       <span
                         className="hovernav"
@@ -205,6 +169,43 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                       </span>
                     </Link>
                   </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/honoraire" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "الرسوم"
+                          : selectedLanguage === "fr"
+                          ? "HONORAIRES"
+                          : "FEES"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "10px" }}>
+                    <Link to="/Actualités" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "أخبار"
+                          : selectedLanguage === "fr"
+                          ? "ACTUALITES"
+                          : "NEWS"}
+                      </span>
+                    </Link>
+                  </li>
+                  
                   <li style={{ margin: "10px" }}>
                     <Link to="/contact" className="navbar-link">
                       <span
@@ -273,42 +274,6 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                     </Link>
                   </li>
                   <li style={{ margin: "0 10px" }}>
-                    <Link to="/honoraire" className="navbar-link">
-                      <span
-                        className="hovernav"
-                        style={{
-                          color: "white",
-                          fontFamily: "Arial, sans-serif",
-                          transition: "color 0.3s",
-                        }}
-                      >
-                        {selectedLanguage === "ar"
-                          ? "سياسة الرسوم"
-                          : selectedLanguage === "fr"
-                          ? "POLITIQUE D'HONORAIRES"
-                          : "FEE POLICY"}
-                      </span>
-                    </Link>
-                  </li>
-                  <li style={{ margin: "0 10px" }}>
-                    <Link to="/Actualités" className="navbar-link">
-                      <span
-                        className="hovernav"
-                        style={{
-                          color: "white",
-                          fontFamily: "Arial, sans-serif",
-                          transition: "color 0.3s",
-                        }}
-                      >
-                        {selectedLanguage === "ar"
-                          ? "أخبار"
-                          : selectedLanguage === "fr"
-                          ? "ACTUALITES"
-                          : "NEWS"}
-                      </span>
-                    </Link>
-                  </li>
-                  <li style={{ margin: "0 10px" }}>
                     <Link to="/about" className="navbar-link">
                       <span
                         className="hovernav"
@@ -344,6 +309,43 @@ const Navbar = ({ handleLanguageChange, selectedLanguage }) => {
                       </span>
                     </Link>
                   </li>
+                  <li style={{ margin: "0 10px" }}>
+                    <Link to="/honoraire" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "الرسوم"
+                          : selectedLanguage === "fr"
+                          ? "HONORAIRES"
+                          : "FEES"}
+                      </span>
+                    </Link>
+                  </li>
+                  <li style={{ margin: "0 10px" }}>
+                    <Link to="/Actualités" className="navbar-link">
+                      <span
+                        className="hovernav"
+                        style={{
+                          color: "white",
+                          fontFamily: "Arial, sans-serif",
+                          transition: "color 0.3s",
+                        }}
+                      >
+                        {selectedLanguage === "ar"
+                          ? "أخبار"
+                          : selectedLanguage === "fr"
+                          ? "ACTUALITES"
+                          : "NEWS"}
+                      </span>
+                    </Link>
+                  </li>
+                  
                   <li style={{ margin: "0 10px" }}>
                     <Link to="/contact" className="navbar-link">
                       <span

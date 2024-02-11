@@ -16,6 +16,62 @@ const HonorairesPolitiqueComponent = ({ selectedLanguage }) => {
       </h2> */}
       <div className="row"  style={{border:"solid gray", padding:"25px",marginBottom:"15px"}}>
       <div className="col-8" >
+      {/* <p>
+        {selectedLanguage === 'ar'
+          ? 'في الساعة (مع صفحة زمنية)'
+          : selectedLanguage === 'fr'
+          ? 'A l\'heure (avec fiche de temps passé)'
+          : 'Hourly (with time sheet)'}
+      </p> */}
+      {selectedLanguage === "fr" ? (
+  <p>
+    Lors du premier rendez-vous, le cabinet procède à une première analyse du dossier et révèle aux clients quelles sont, en droit, les options disponibles et en matière contentieuse, les procédures judiciaires susceptibles d’être applicables.
+    Sur la base d’une information complète et d’engagements réciproques convenus, et conformément aux usages de la profession, les honoraires sont établis en fonction des éléments suivants :
+    <ul>
+      <li> Du temps consacré à l’affaire ;</li>
+      <li> De la nature et la difficulté de l’affaire ;</li>
+      <li> De la situation de fortune du client ;</li>
+      <li> Des avantages et des résultats obtenus ;</li>
+      <li> De l’incidence des frais et charges du cabinet.</li>
+    </ul>
+    A ces honoraires, peuvent éventuellement se rajouter des frais et dépens ainsi que les frais du cabinet.
+  </p>
+) : selectedLanguage === "ar" ? (
+  <p>
+    أثناء الموعد الأول، يقوم المكتب بإجراء تحليل أولي للملف ويكشف للعملاء عن الخيارات المتاحة من الناحية القانونية وفيما يتعلق بالنزاعات، الإجراءات القضائية التي قد تكون قابلة للتطبيق.
+    استنادًا إلى معلومات شاملة والالتزامات المتبادلة المتفق عليها، ووفقًا لتقاليد المهنة، يتم تحديد الرسوم استنادًا إلى العناصر التالية:
+    <ul>
+      <li> من الوقت المخصص للقضية ؛</li>
+      <li> من طبيعة وصعوبة القضية ؛</li>
+      <li> من وضع ثروة العميل ؛</li>
+      <li> من المزايا والنتائج المحققة ؛</li>
+      <li> من تأثير تكاليف ونفقات المكتب.</li>
+    </ul>
+    يمكن أن تُضاف إلى هذه الرسوم، في حال الضرورة، تكاليف ونفقات إضافية بالإضافة إلى تكاليف المكتب.
+  </p>
+) : (
+  <p>
+    During the initial appointment, the firm conducts an initial analysis of the case and informs clients about the available legal options and, in contentious matters, the applicable legal procedures.
+    Based on comprehensive information and mutually agreed commitments, and in accordance with professional practices, fees are established based on the following elements:
+    <ul>
+      <li> Time devoted to the case;</li>
+      <li> Nature and difficulty of the case;</li>
+      <li> Client's financial situation;</li>
+      <li> Benefits and results obtained;</li>
+      <li> Impact of the firm's fees and charges.</li>
+    </ul>
+    To these fees, additional costs and expenses, as well as firm fees, may be added if necessary.
+  </p>
+)}
+
+      <button className="btn" onClick={() => navigate('/contact')}>{selectedLanguage === 'ar' ? 'اتصل' : selectedLanguage === 'fr' ? 'CONTACT' : 'CONTACT'}</button>
+      </div>
+      <div className="col-4">
+  <img src="https://i.pinimg.com/564x/51/d9/60/51d960a9471363531f1a05f7b7349647.jpg" style={{width:"200px",height:"200px"}} />
+      </div>
+      </div>
+      <div className="row"  style={{border:"solid gray", padding:"25px",marginBottom:"15px"}}>
+      <div className="col-8" >
       <p>
         {selectedLanguage === 'ar'
           ? 'في الساعة (مع صفحة زمنية)'
