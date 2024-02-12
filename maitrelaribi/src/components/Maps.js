@@ -18,7 +18,7 @@ const Maps = () => {
             Bab Benet, Tunis, Tunisie<br />
               Tél. : +216 98 351 049<br />
               Fax. : +216 71 562 938<br />
-              contact@berjeblawyers.com
+              maitrelaaribi@gmail.com
             </p><br />
           </div>
     <div className='col-7'>

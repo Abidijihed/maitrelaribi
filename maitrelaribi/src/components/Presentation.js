@@ -14,13 +14,13 @@ const PhotoSection = ({ selectedLanguage }) => {
           />
         </div>
         <div className="presentation-container">
-          <h2 className="presentation-title">
+          {/* <h2 className="presentation-title">
             {selectedLanguage === "ar"
               ? "تقديم"
               : selectedLanguage === "fr"
               ? "Présentation"
               : "Presentation"}
-          </h2>
+          </h2> */}
           <p
             className="presentation-text"
             style={{ fontSize: "18px", lineHeight: "1.6", color: "#555" }}

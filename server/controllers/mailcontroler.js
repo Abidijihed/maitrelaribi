@@ -59,7 +59,7 @@ const nodmail = async(req, res, next) => {
   var mail = {
     from: req.body.email,
     to: "maitrelaaribi@gmail.com",
-    Subject: subject,
+    subject: subject,
     text: message,
     html:html
   }
